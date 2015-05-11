@@ -1,5 +1,7 @@
 # clj-docomo-dialogue
 
+[![Clojars Project](http://clojars.org/clj-docomo-dialogue/latest-version.svg)](http://clojars.org/clj-docomo-dialogue)
+
 ## Usage
 
 ```clj
@@ -7,9 +9,9 @@
 
 (def api-key "YOUR DOCOMO API KEY")
 
-(talk api-key "¤³¤ó¤Ë¤Á¤Ï")
-(talk api-key "¤³¤ó¤Ë¤Á¤Ï" {:t 30})
-(talk api-key "¤³¤ó¤Ë¤Á¤Ï" {:context "CONTEXT"})
+(talk api-key "ã“ã‚“ã«ã¡ã¯")
+(talk api-key "ã“ã‚“ã«ã¡ã¯" {:t 30})
+(talk api-key "ã“ã‚“ã«ã¡ã¯" {:context "CONTEXT"})
 ```
 
 ## License
