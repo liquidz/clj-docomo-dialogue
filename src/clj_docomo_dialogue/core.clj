@@ -13,4 +13,4 @@
      (-> (str DIALOGUE_API "?APIKEY=" api-key)
          (client/post {:content-type :json, :body json})
          :body
-         json/read-str))))
+         (json/read-str :key-fn keyword)))))
