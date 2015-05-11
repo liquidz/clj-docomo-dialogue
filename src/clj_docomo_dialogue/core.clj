@@ -11,6 +11,6 @@
   ([api-key text option]
    (let [json (json/write-str (merge option {:utt text}))]
      (-> (str DIALOGUE_API "?APIKEY=" api-key)
-         (client/post {:content-type :json, :body json})
+         (client/post {:content-type :json, :body json, :insecure? true})
          :body
          (json/read-str :key-fn keyword)))))
